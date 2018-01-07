@@ -10,7 +10,6 @@ body{
     width: 80%;
     margin: auto;
 }
-
 header div{
     background-image: url("../pics/Extinguisher slide .jpg");
     background-repeat: no-repeat;
@@ -44,38 +43,59 @@ header div{
 }
 .training-modules{
     display: flex; 
-    align-items: center;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
     background-color: blanchedalmond;
     margin-top: 2rem;
     border: 2px solid black;
     border-radius: 20px;
 }
-.training-modules img{
+.trainmod-img{
     float: left;
-    margin-right: 2rem;
+    margin-right: 1rem;
     margin-left: 3rem;
     width: 12rem;
     height: 8rem;
     padding: .5rem .5rem;
     background-color: rgb(235, 238, 229);
 }
+.training-modules div{
+    flex-direction: column;
+    text-align: left;
+}
+.dimmer{
+    background-color: hsl(60, 22, 79);
+    display: flex; 
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    border: 2px solid black;
+    border-radius: 20px;
+}
 .nar{
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
-    padding-left: 3rem;
     font-size: 1rem;
-    width: 30rem;
+    width: 25rem;
+}
+.firstpar{
+    margin-right: 1rem;
+
 }
 .secondpar{
-    margin-right: 3rem;
+    width: 12rem;
+    margin-left: 0rem;
 }
 .price{
     font-size: 1.5rem;
     font-style: italic;
     color: lightslategrey;
     width: 13rem;  
-    padding: 1rem; 
+    padding-right: 1rem; 
+    margin-left: 1rem;
 }
 .price h5{
     font-size: 1rem;
