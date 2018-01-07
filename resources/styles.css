@@ -1,0 +1,194 @@
+html{
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    background-color: burlywood;
+}
+body{
+    line-height: 1.4;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+header div{
+    background-image: url("../pics/Extinguisher slide .jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    position: fixed;
+}
+.sub-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    color: darkslategray;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: oblique;
+    background-color: white;
+    padding-top: 15rem;
+    padding-left: 15rem;
+}
+.sub-heading ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.sub-heading li{
+    padding-right: 2rem;
+}
+.training-modules{
+    display: flex; 
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+    background-color: blanchedalmond;
+    margin-top: 2rem;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.training-modules img{
+    float: left;
+    margin-right: 1rem;
+    margin-left: 3rem;
+    width: 12rem;
+    height: 8rem;
+    padding: .5rem .5rem;
+    background-color: rgb(235, 238, 229);
+}
+.training-modules div{
+    flex-direction: column;
+    text-align: left;
+}
+.nar{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    width: 25rem;
+}
+.firstpar{
+    margin-right: 1rem;
+
+}
+.secondpar{
+    width: 12rem;
+    margin-left: 0rem;
+}
+.price{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: lightslategrey;
+    width: 13rem;  
+    padding-right: 1rem; 
+    margin-left: 1rem;
+}
+.price h5{
+    font-size: 1rem;
+}
+.price h6{
+    font-size: .6rem;
+}
+.phone{
+    margin: 2rem 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 1330px){
+    .sub-heading h2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .training-modules img{
+        width: 6rem;
+        height: 4rem;
+        margin: .5rem;
+        padding: 0rem;
+    }
+    .nar{
+        font-size: .75rem;
+    }
+    .secondpar{
+        display: none;
+    }
+    .price{
+        font-size: 1rem;
+    }
+    .price h5{
+        font-size: .75rem;
+    }
+    .price h6{
+        display: none;
+    }
+    #firstres{
+        display: none;
+    }
+    .sub-heading{
+        padding-top: 10rem;
+        padding-left: 1rem;
+    }
+    header div{
+        display: flex;
+        align-items: center;
+        height: 10rem;
+    }
+    header img{
+        height: 10rem;
+    }
+    
+}
+@media only screen and (max-width: 480px){
+    .training-modules img{
+        width: 3rem;
+        height: 2rem;
+        margin: .5rem;
+        padding: 0rem;
+    }
+    .nar{
+        padding: .1rem .1rem;
+        font-size: .5rem;
+        width: 30rem;
+    }
+    .price{
+        font-size: .75rem;
+    }
+    .price h5{
+        font-size: .5rem;
+    }
+    .sesstime{
+        display: none;
+    }
+    .phone{
+        font-size: .75rem;
+    }
+    footer{
+        font-size: .5rem;
+    }
+    .sub-heading{
+        padding-top: 5rem;
+    }
+    .sub-heading ul{
+        font-size: .6rem;
+    }
+    header div{
+        display: flex;
+        align-items: center;
+        height: 5rem;
+    }
+    header img{
+        height: 5rem;
+    }
+
+}
+
