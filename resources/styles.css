@@ -52,7 +52,7 @@ header div{
 }
 .training-modules img{
     float: left;
-    margin-right: 2rem;
+    margin-right: 5rem;
     margin-left: 3rem;
     width: 12rem;
     height: 8rem;
@@ -62,19 +62,21 @@ header div{
 .nar{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-right: 1rem;
-    padding-left: 3rem;
     font-size: 1rem;
     width: 30rem;
 }
-.secondpar{
-    margin-right: 3rem;
+.firstpar{
+    padding-right: 3rem;
 }
+.secondpar{
+    padding-right: 3rem;
+}
+
 .price{
     font-size: 1.5rem;
     font-style: italic;
     color: lightslategrey;
-    width: 13rem;  
+    width: 10rem;  
     padding: 1rem; 
 }
 .price h5{
@@ -93,12 +95,24 @@ footer{
     flex-direction: row;
     justify-content: space-between;
 }
+@media only screen and (max-width:1550px){
+    .nar{
+        font-size: .85rem;
+    }
+    .training-modules img{
+        margin-right: 2rem;
+    }
+
+}
+
+
+
 @media only screen and (max-width: 1330px){
     .sub-heading h2{
         display: none;
     }
-}
-@media only screen and (max-width: 1100px){
+    }
+@media only screen and (max-width: 1024px){
     .training-modules img{
         width: 6rem;
         height: 4rem;
