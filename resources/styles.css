@@ -27,7 +27,6 @@ header div{
     align-items: center;
     color: darkslategray;
     font-size: 2rem;
-    font-weight: bold;
     font-style: oblique;
     background-color: white;
     padding-top: 15rem;
@@ -37,10 +36,16 @@ header div{
     display: flex;
     flex-direction: row;
     font-size: 1rem;
-    text-decoration: none;
+    
 }
 .sub-heading li{
     padding-right: 2rem;
+}
+.sub-heading a{
+    text-decoration: none;
+}
+#extPrice{
+    content: "\0024";
 }
 .training-modules{
     display: flex; 

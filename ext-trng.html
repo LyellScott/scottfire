@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="./resources/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/stylesOc.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono|Space+Mono:400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Order Corses</title>
@@ -20,48 +21,69 @@
     
     
         <ul>
-            <li>Courses</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li><a href="index.html">Courses</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
         </ul>
     
 </div>
 <form>
-<div class="training-modules container">
-    <div><img class="trainmod-img" src="./pics/TrainingCO2.jpg"></div>
-        <div class="nar firstpar"><p>I would like to book Fire Extinguisher Training:<br><br>Name: <input type="text" name="name"><br>E-mail:  <input type="email" name="email"><br>Phone: <input type="phone" name="phone"></p></div>
-        <div class="nar secondpar"><p>On 'Date'</p><input id="date" type="date"><br><br><p>At 'Time'</p><input type="time" name="usr_time"></div>
-        <div class="nar thirdpar"><p>Please contact me to confirm sheduling Via:<br>  <input type="checkbox" name="emailcontact" value="emailcontact"> E-mail<br><input type="checkbox" name="phonecontact" value="phonecontact"> Phone:</p></div>
-        <div class="nar price"><h5>Total cost:</h5><h3>$450</h3></div>
+<div class="dimmer container">
+        <div class="nar firstpar tinp">
+            <p>I would like to book training:</p>
+            <p>Name:<input type="text" name="name"></p>
+            <p>E-mail:<input type="email" name="email"></p>
+            <p>Phone:<input type="phone" name="phone"></p>
+        </div>
+        <div class="nar secondpar">
+            <p>On 'Date'</p><input id="date" type="date"><br><br>
+            <p>At 'Time'</p><input type="time" name="usr_time">
+        </div>
+        <div class="nar thirdpar">
+            <p>Please contact me to confirm sheduling Via:<br>
+            <input type="checkbox" name="emailcontact" value="emailcontact">E-mail<br>
+            <input type="checkbox" name="phonecontact" value="phonecontact">Phone:</p>
+        </div>
+        <div class="nar price">
+            <h5>Total cost:</h5>
+           <h3>$ <span id="totPrice"> 450</span></h3>
+        </div>
     </div>
 </form>
+
     <div class="addcourse container">
-        <h2><br>Click on any course below to add to the same days training and see the discount</h2>
-
+        <h2><br>Click on any course below to add to the same days training and see the discount!</h2>
     </div>
+<div class="training-modules container one">
+        <div><img class="trainmod-img" src="./pics/TrainingCO2.jpg"></div>
+        <div class="nar firstpar"><p>Fire Extinguisher Training<br><span id="firstres">(First Response Fire Training)</span></p></div>
+        <div class="nar secondpar"><p>Required to be completed by all staff every <u>2 years</u></p></div>
+        <div class="nar"><h3><span class="sesstime">Session Time <br></span> 60 - 90 minutes</h3></div>
+        <div class="price"><h3>$<span id="extPrice">450</span></h3><h5>per session</h5></div>
+</div>
 
-<div class="dimmer container">
-        <div><img class="trainmod-img" src="./pics/WardenHats.jpg"></div>
+<div class="training-modules container two">
+        <div ><img class="trainmod-img" src="./pics/WardenHats.jpg"></div>
         <div class="nar firstpar"><p>ECO (Fire Warden Training)</p></div>
         <div class="nar secondpar"><p>Required to be completed by all Wardens <u>Annually</u></p></div>
         <div class="nar"><h3><span class="sesstime">Session Time <br></span> 60 - 70 minutes</h3></div>
-        <div class="price"><h3>$290</h3><h5>per session</h5></div>
+        <div class="price"><h3>$<span id="wardenPrice">290</span></h3><h5>per session</h5></div>
+        
 </div>
 
-<div class="training-modules container">
+<div class="training-modules container three">
         <div><img class="trainmod-img" src="./pics/TriAngle1Black.png"></div>
         <div class="nar firstpar"><p>General Staff Fire Training</p></div>
         <div class="nar secondpar"><p>Required to be completed by all Staff <u>Annually</u></p></div>
         <div class="nar"><h3><span class="sesstime">Session Time <br></span> 50 - 60 minutes</h3></div>
-        <div class="price"><h3>$290</h3><h5>per session</h5></div>
+        <div class="price"><h3>$<span id="staffPrice">290</span></h3><h5>per session</h5></div>
 </div>
 
-<div class="training-modules container">
+<div class="training-modules container four">
     <div><img class="trainmod-img" src="./pics/Evacuation.jpg"></div>
     <div class="nar firstpar"><p>Building Evacuation Training</p></div>
     <div class="nar secondpar"><p>Required to be completed in all buildings <u>Annually</u></p></div>
     <div class="nar"><h3><span class="sesstime">Session Time <br></span> 20 - 30 minutes</h3></div>
-    <div class="price"><h3>$120</h3><h5>per session.</h5> <h6>Half price with any other training module</h6></div>
+    <div class="price"><h3>$<span id="evacPrice"> 120</span></h3><h5>per session.</h5> <h6>Half price with any other training module</h6></div>
 </div>
 <div>
     <h2 class="phone">Please call 1800 996 449</h2>
@@ -69,6 +91,9 @@
 <footer class="container">
    <small>&copy; copywrite Scottfire</small><small>QBCC Licence No. 1164402</small>
 </footer>
-
+<script src="resources/myscript.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="./resources/main.js"></script>
 </body>
 </html>
