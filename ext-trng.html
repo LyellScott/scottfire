@@ -26,32 +26,58 @@
         </ul>
     
 </div>
-<form>
+<form class="dimmerSwitch">
 <div class="dimmer container">
         <div class="nar firstpar tinp">
-            <p>I would like to book training:</p>
-            <p>Name:<input type="text" name="name"></p>
-            <p>E-mail:<input type="email" name="email"></p>
-            <p>Phone:<input type="phone" name="phone"></p>
+            <table>
+                <tr>
+                    <th colspan="2">I would like to book training:</th>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td><input type="phone" name="phone"></td>
+                </tr>
+            </table>
         </div>
-        <div class="nar secondpar">
-            <p>On 'Date'</p><input id="date" type="date"><br><br>
-            <p>At 'Time'</p><input type="time" name="usr_time">
+        <div class="nar secondpar tinp">
+            <table>
+                <tr>
+                    <td>On Date:</td>
+                    <td><input id="date" type="date"></td>
+                </tr>
+                <tr><br></tr>
+                <tr>
+                    <td>At Time:</td>
+                    <td><input type="time" name="usr_time"></td>
+                </tr>
+            </table>
         </div>
-        <div class="nar thirdpar">
-            <p>Please contact me to confirm sheduling Via:<br>
+        <div class="nar thirdpar tinp">
+            <p>Please contact me via:<br>
             <input type="checkbox" name="emailcontact" value="emailcontact">E-mail<br>
-            <input type="checkbox" name="phonecontact" value="phonecontact">Phone:</p>
+            <input type="checkbox" name="phonecontact" value="phonecontact">Phone:<br>
+            to confirm sheduling </p>
         </div>
+        <div class="nar selectCourses tinp">
+            <h3>Selected Courses:</h3>
+            </div>
         <div class="nar price">
-            <h5>Total cost:</h5>
-           <h3>$ <span id="totPrice"> 450</span></h3>
+            <h5>Click on more courses to see discount!:</h5>
+           <h3>$ <span id="totPrice"> </span></h3>
         </div>
     </div>
 </form>
 
     <div class="addcourse container">
-        <h2><br>Click on any course below to add to the same days training and see the discount!</h2>
+        <h2><br>Click on courses below to see prices and discounts where more than one course is conducted on the same day!</h2>
     </div>
 <div class="training-modules container one">
         <div><img class="trainmod-img" src="./pics/TrainingCO2.jpg"></div>

@@ -44,9 +44,7 @@ header div{
 .sub-heading a{
     text-decoration: none;
 }
-#extPrice{
-    content: "\0024";
-}
+
 .training-modules{
     display: flex; 
     align-items: center;
@@ -67,11 +65,12 @@ header div{
 .nar{
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-right: 1rem;
     font-size: 1rem;
-    width: 30rem;
+    width: 17rem;
 }
 .firstpar{
-    padding-right: 3rem;
+    padding-right: 2rem;
 }
 .secondpar{
     padding-right: 3rem;
@@ -81,14 +80,22 @@ header div{
     font-size: 1.5rem;
     font-style: italic;
     color: lightslategrey;
-    width: 10rem;  
-    padding: 1rem; 
+    width: 13rem;  
+    padding-right: 1rem; 
+    margin-left: 1rem;
 }
 .price h5{
     font-size: 1rem;
 }
 .price h6{
     font-size: .6rem;
+}
+.diagramPrice{
+    font-size: 1rem;
+    font-style: italic;
+    color: lightslategrey;
+    width: 10rem;  
+    padding-right: 1rem; 
 }
 .phone{
     margin: 2rem 2rem;

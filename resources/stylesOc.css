@@ -85,6 +85,9 @@ header div{
     flex-direction: column;
     text-align: left;
 }
+.dimmerSwitch{
+    display: none;
+}
 .dimmer{
     background-color: hsl(60, 22, 79);
     display: flex; 
@@ -94,6 +97,10 @@ header div{
     margin-top: 2rem;
     border: 2px solid red;
     border-radius: 20px;
+    padding-left: 3rem;
+}
+table{
+    text-align: left;
 }
 .nar{
     padding-top: 1rem;
@@ -107,12 +114,21 @@ header div{
     width: 20rem;
 }
 .tinp{
-    color: blue;
     font-family: Overpass Mono;
 }
 .secondpar{
-    width: 12rem;
+    width: 18rem;
     margin-left: 0rem;
+}
+.thirdpar{
+    width: 28rem;
+}
+.selectCourses{
+    width: 20rem;
+}
+.selectCourses p{
+    font-size: .75rem;
+    color: green;
 }
 .price{
     font-size: 1.5rem;
