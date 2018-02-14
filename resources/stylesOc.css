@@ -107,11 +107,10 @@ table{
     padding-bottom: 1rem;
     padding-right: 1rem;
     font-size: 1rem;
-    width: 25rem;
 }
 .firstpar{
     margin-right: 1rem;
-    width: 20rem;
+    width: 21rem;
 }
 .tinp{
     font-family: Overpass Mono;
@@ -121,10 +120,10 @@ table{
     margin-left: 0rem;
 }
 .thirdpar{
-    width: 28rem;
+    width: 16rem;
 }
 .selectCourses{
-    width: 20rem;
+    width: 15rem;
 }
 .selectCourses p{
     font-size: .75rem;
@@ -148,6 +147,15 @@ table{
     margin: 2rem 2rem;
     font-size: 2rem;
     text-align: center;
+}
+#youSave{
+    font-size: 1rem;
+}
+#discount{
+    font-size: 1rem;
+}
+.dim{
+    background-color: lightsalmon;
 }
 footer{
     display: flex;
