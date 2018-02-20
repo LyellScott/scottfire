@@ -16,10 +16,11 @@
 html{
     font-size: 18px;
     font-family: Helvetica, sans-serif;
-    background-color: burlywood;
+
 }
 body{
     line-height: 1.4;
+    background-color: burlywood;
 }
 .container{
     width: 80%;
@@ -207,16 +208,35 @@ footer{
     
 }
 @media only screen and (max-width: 480px){
+    .dimmer{
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+    th{
+        font-size: .7rem;
+    }
     .training-modules img{
         width: 3rem;
         height: 2rem;
         margin: .5rem;
         padding: 0rem;
     }
+    .selectCourses h3{
+        font-size: .75rem;
+    }
+    .selectCourses p{
+        font-size: .7rem;
+        color: green;
+    }
     .nar{
         padding: .1rem .1rem;
         font-size: .5rem;
         width: 30rem;
+        margin-bottom: 1rem;
+    }
+    .firstpar{
+        margin-bottom: 1rem;
     }
     .price{
         font-size: .75rem;

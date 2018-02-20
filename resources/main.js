@@ -115,7 +115,7 @@ $(document).ready (function() {
             $('#totPrice').replaceWith($disPrice);
 
             var newSaving = +$('#discount').text();
-            var totSaving = (newSaving + 100);
+            var totSaving = (newSaving + 60);
             var $disSaving = $('<span id="discount">'+ totSaving +'</span>');
             var $youSaveOn = $('<span id="youSave">'+ 'You Save $' +'</span>');
             $('#youSave').replaceWith($youSaveOn);
